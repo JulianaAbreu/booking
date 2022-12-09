@@ -87,24 +87,29 @@
             </button>
         </div>
     </section>
-    <form>
-        <div>
-            <input type="text" name="destino" placeholder="Para onde você vai?">
-        </div>
-        <div>
-            <button>Data de check in - Data de check-out</button>
-        </div>
-        <div>
-            <button>2 adultos - 0 criança - 1 quarto</button>
-        </div>
-        <button type="submit">Pesquisar</button>
+    <div class="container">
+        <form id="form-filter">
+            <div id="form-filter-content">
+                <div class="field">
+                    <input type="text" name="destino" placeholder="Para onde você vai?">
+                </div>
+                <div class="field">
+                    <button type="button">Data de check in - Data de check-out</button>
+                </div>
+                <div class="field">
+                    <button type="button">2 adultos - 0 criança - 1 quarto</button>
+                </div>
+                <button type="submit">Pesquisar</button>
+            </div>
+            <div id="work-option">
+                <input type="checkbox" value="trabalho" name="viagemTrabalho" id="viagemTrabalho">
+                <label for="viagemTrabalho">Vou viajar a trabalho</label>
+            </div>
+        </form>
+    </div>
 
-        <input type="checkbox" value="trabalho" name="viagemTrabalho" id="viagemTrabalho">
-        <label for="viagemTrabalho">Vou viajar a trabalho</label>
-    </form>
-
-    <div>
-        <img src="" alt="Informações">
+    <div class="container info">
+        <img src="assets/icons/descanso.svg" alt="Informações">
         <p>
             Leia as recomendações necessárias. Confira as últimas restrições
             relacionadas à COVID-19 antes de viajar.
@@ -112,12 +117,12 @@
         </p>
     </div>
 
-    <article>
+    <article class="container offers">
         <h2>Ofertas</h2>
         <p>Promoções e ofertas especiais para você</p>
 
-        <ul>
-            <li>
+        <ul class="offers-list">
+            <li class="offers-banner">
                 <h4>Economize 15% com as ofertas de Fim de Ano</h4>
                 <p>Conheça mais um destino da sua lista de desejos</p>
                 <button>
@@ -126,7 +131,7 @@
                     </a>
                 </button>
             </li>
-            <li>
+            <li class="app-banner">
                 <div>
                     <h4>Sua viagem em um só app</h4>
                     <p>Encontre o melhor em estadias, voos e muito mais no app
@@ -137,17 +142,17 @@
                     </button>
                 </div>
                 <div>
-                    <img src="assets/app.jpeg" alt="Baixar app">
+                    <img src="assets/app.jpeg" alt="Baixar app" class="img-app">
                 </div>
             </li>
         </ul>
     </article>
 
-    <section>
+    <section class="container destinations">
         <h2>Conheça o Brasil</h2>
         <p>Estes destinos incríveis têm muito a oferecer</p>
 
-        <ul>
+        <ul class="list">
             <li>
                 <a href="https://www.booking.com/searchresults.pt-br.html">
                     <img src="assets/destinos/rio-janeiro.webp" alt="Rio de Janeiro">
